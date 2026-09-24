@@ -152,3 +152,8 @@ async def events():
         media_type="text/event-stream",
         headers={"Cache-Control": "no-cache", "Connection": "keep-alive"}
     )
+from fastapi.responses import FileResponse
+
+@app.get("/game")
+async def game():
+    return FileResponse("3_kart_live_mobile.html")
