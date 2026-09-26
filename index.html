@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="az">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>3 Kart LIVE</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="app">
+  <header>
+    <div>
+      <div class="eyebrow">TIKTOK LIVE OYUNU</div>
+      <h1>3 KART</h1>
+    </div>
+    <div class="roundBox">RAUND <span id="round">1</span></div>
+  </header>
+
+  <main>
+    <section class="topbar">
+      <div class="status"><span id="dot"></span><span id="statusText">İştirakçı gözlənilir</span></div>
+      <div class="gift">🎁 <b>Parfum</b> = oyuna giriş</div>
+    </section>
+
+    <section id="players" class="players"></section>
+
+    <section class="controls">
+      <button id="startBtn" class="primary">RAUNDU BAŞLAT</button>
+      <button id="resetBtn" class="secondary">YENİ RAUND</button>
+      <button id="testBtn" class="test">TEST: PARFUM</button>
+    </section>
+
+    <section id="winner" class="winner hidden">
+      <div class="winnerSmall">🏆 RAUNDUN QALİBİ</div>
+      <div id="winnerName">—</div>
+      <div id="winnerScore">0 XAL</div>
+    </section>
+  </main>
+</div>
+<script src="/app.js"></script>
+</body>
+</html>

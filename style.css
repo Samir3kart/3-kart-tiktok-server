@@ -1,0 +1,33 @@
+*{box-sizing:border-box}
+html,body{margin:0;width:100%;height:100%;font-family:Arial,Helvetica,sans-serif;background:#090b10;color:#fff;overflow:hidden}
+body{display:flex;align-items:center;justify-content:center}
+.app{width:100vw;height:100vh;min-height:620px;padding:22px 30px;background:radial-gradient(circle at 50% 0,#20263a 0,#0b0d13 48%,#07080b 100%)}
+header{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #2b3040}
+.eyebrow{font-size:12px;letter-spacing:3px;color:#aeb6ca;font-weight:700}
+h1{margin:2px 0 0;font-size:38px;letter-spacing:4px}
+.roundBox{padding:12px 18px;border:1px solid #3a4052;border-radius:14px;background:#111520;font-weight:800}
+.roundBox span{font-size:22px;margin-left:6px}
+.topbar{height:62px;display:flex;align-items:center;justify-content:space-between}
+.status{font-weight:700;color:#dce2f0}.status #dot{display:inline-block;width:10px;height:10px;border-radius:50%;background:#7c8495;margin-right:9px}
+.status.live #dot{background:#45e08a;box-shadow:0 0 14px #45e08a}
+.gift{font-size:14px;color:#d4d9e5}.gift b{color:#fff}
+.players{height:calc(100vh - 260px);display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(3,1fr);gap:12px}
+.cardPlayer{position:relative;border:1px solid #303748;border-radius:18px;background:linear-gradient(145deg,#151a25,#0d1017);padding:14px;display:flex;flex-direction:column;justify-content:space-between;min-width:0}
+.cardPlayer.empty{opacity:.35;border-style:dashed}
+.playerHead{display:flex;justify-content:space-between;gap:8px;align-items:center}
+.name{font-weight:800;font-size:17px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.num{font-size:11px;color:#8992a8}
+.cards{display:flex;gap:7px;justify-content:center}
+.card{width:28%;aspect-ratio:2/3;border-radius:10px;border:1px solid #4b5367;background:linear-gradient(145deg,#20283b,#101521);display:flex;align-items:center;justify-content:center;font-size:25px;font-weight:900;box-shadow:0 8px 20px #0006}
+.card.hiddenCard{font-size:18px;color:#76809a;background:repeating-linear-gradient(45deg,#172033,#172033 7px,#202b41 7px,#202b41 14px)}
+.total{font-size:13px;text-align:center;color:#b8c0d0}.total b{color:#fff;font-size:18px}
+.controls{height:76px;display:flex;gap:10px;align-items:center;justify-content:center}
+button{border:0;border-radius:13px;padding:14px 20px;font-weight:900;cursor:pointer}
+.primary{background:#fff;color:#0a0b10;min-width:210px}.secondary{background:#222838;color:#fff}.test{background:#3a2549;color:#fff}
+button:disabled{opacity:.35;cursor:not-allowed}
+.winner{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#080a0feF;backdrop-filter:blur(8px);z-index:10}
+.winnerSmall{letter-spacing:3px;color:#c8cfdd;font-weight:800}
+#winnerName{font-size:68px;font-weight:1000;margin:10px 0;text-align:center}
+#winnerScore{font-size:30px;font-weight:900}
+.hidden{display:none}
+@media(max-width:900px){.app{padding:12px}.players{gap:7px}.cardPlayer{padding:9px}.name{font-size:13px}h1{font-size:28px}.card{font-size:18px}.controls{height:68px}}

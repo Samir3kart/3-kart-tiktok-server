@@ -1,0 +1,20 @@
+3 KART TIKTOK LIVE — RENDER
+
+Runtime: Node
+Branch: main
+Root Directory: empty
+Build Command: npm install
+Start Command: npm start
+Environment Variables: none
+
+Game:
+- Parfum -> participant entry
+- Maximum 12 participants
+- 3 hidden cards
+- RAUNDU BAŞLAT -> reveal
+- Highest total -> winner
+- YENİ RAUND -> reset
+
+Gift endpoint:
+POST /api/gift
+JSON: {"username":"TikTokUser","gift":"Parfum"}
